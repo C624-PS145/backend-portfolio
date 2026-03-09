@@ -43,6 +43,7 @@ app.use(express.json());
 const profileRoutes = require('./routes/profile');
 const experienceRoutes = require('./routes/experience');
 const projectRoutes = require('./routes/projects');
+const technologyRoutes = require('./routes/technologies');
 const certificationRoutes = require('./routes/certifications');
 const educationRoutes = require('./routes/education');
 const contactRoutes = require('./routes/contact');
@@ -50,18 +51,21 @@ const aboutRoutes = require('./routes/about');
 const portfolioContextRoutes = require('./routes/portfolioContext');
 const chatRoutes = require('./routes/chat');
 const authRoutes = require('./routes/auth');
+const uploadRoutes = require('./routes/upload');
 
 // API Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/profile', profileRoutes);
 app.use('/api/experience', experienceRoutes);
 app.use('/api/projects', projectRoutes);
+app.use('/api/technologies', technologyRoutes);
 app.use('/api/certifications', certificationRoutes);
 app.use('/api/education', educationRoutes);
 app.use('/api/contact', contactRoutes);
 app.use('/api/about', aboutRoutes);
 app.use('/api/portfolio-context', portfolioContextRoutes);
 app.use('/api/chat', chatRoutes);
+app.use('/api/upload', uploadRoutes);
 
 // Root route for testing
 app.get('/', (req, res) => {
