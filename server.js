@@ -13,6 +13,8 @@ const corsOptions = {
       'http://localhost:3001',
       'http://localhost:5173',
       'http://localhost:5174',
+      'http://localhost:9000',
+      'https://yohanpermana.netlify.app',
     ];
 
     // Allow requests with no origin (like mobile apps or Vercel functions)
